@@ -5,7 +5,7 @@ on:
     types:
       - closed
     branches:
-      - [dev,pre-master]
+      - dev
 
 jobs:
   if_merged:
@@ -22,9 +22,7 @@ jobs:
         with:
           java-version: 11
       - name: Building APKs
-        run: bash ./gradlew assemble --stacktrace
-      - name: Build Bundles
-        run: bash ./gradlew bundleProductionRelease --stacktrace
+        run: bash ./gradlew assembleDebug --stacktrace
       - name: Upload APKs and Bundle
         uses: actions/upload-artifact@v1
         with:
