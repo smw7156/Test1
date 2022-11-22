@@ -4,12 +4,8 @@ on:
   pull_request:
     types:
       - closed
-    branches:
-      - dev
 
 jobs:
-  if_merged:
-    if: github.events.pull_request.merged == true
 
   apk:
     name: Generate APK
