@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnAll.setOnClickListener {
             Toast.makeText(this, "button clicked", Toast.LENGTH_SHORT).show()
-            binding.textView.text = "button"
+            binding.textView.text = getString(R.string.button)
         }
     }
 }
