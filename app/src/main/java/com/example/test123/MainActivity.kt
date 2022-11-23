@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnAll.setOnClickListener {
-            Toast.makeText(this,"button clicked", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "button clicked", Toast.LENGTH_SHORT).show()
         }
     }
 }
